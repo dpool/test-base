@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-whoami
-
 setUpDockerComposeDotEnv() {
   [ -e .env ] && rm .env
   echo "HOST_UID=`id -u`" >> .env
