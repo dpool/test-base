@@ -13,6 +13,6 @@ services:
     command: >
       /bin/sh -c "
       cd /acceptance;
-      composer install;
+      composer update;
       php vendor/bin/codecept run --steps
       "
