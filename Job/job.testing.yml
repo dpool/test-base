@@ -1,0 +1,8 @@
+stages:
+  - testing
+
+acceptance:
+  tags: [shell]
+  stage: testing
+  script:
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
