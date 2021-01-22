@@ -4,5 +4,6 @@ stages:
 acceptance:
   tags: [shell]
   stage: testing
+  when: manual
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
