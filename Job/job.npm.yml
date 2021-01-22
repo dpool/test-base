@@ -1,0 +1,16 @@
+npm:
+  tags: [docker]
+  stage: frontend
+  when: manual
+  only:
+    - test
+    - production
+  dependencies:
+    - composer
+  script:
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.npm.script.bash)
+  artifacts:
+    expire_in: 60 minutes
+    paths:
+      - .Build/public/typo3conf/ext/website/Resources/Public/JavaScript/
+      - .Build/public/typo3conf/ext/website/Resources/Public/Stylesheets/
