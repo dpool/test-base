@@ -1,6 +1,6 @@
 post_frontend_test:
   tags: [shell]
-  stage: deploy
+  stage: postdeploy
   dependencies:
     - deploy_test
   when: manual

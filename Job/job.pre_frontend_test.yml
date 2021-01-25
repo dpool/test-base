@@ -1,6 +1,6 @@
 pre_frontend_test:
   tags: [shell]
-  stage: deploy
+  stage: predeploy
   dependencies:
     - composer
     - npm
