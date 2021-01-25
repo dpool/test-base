@@ -4,7 +4,7 @@ services:
     image: selenium/standalone-chrome:3.12
 
   acceptance:
-    image: typo3gmbh/php74:latest
+    image: b13gmbh/php-builder:7.4
     user: ${HOST_UID}
     links:
       - chrome

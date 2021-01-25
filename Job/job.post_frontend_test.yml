@@ -1,9 +1,8 @@
-stages:
-  - testing
-
-acceptance:
+post_frontend_test:
   tags: [shell]
-  stage: testing
+  stage: deploy
+  dependencies:
+    - deploy_test
   when: manual
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)

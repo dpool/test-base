@@ -1,0 +1,13 @@
+pre_frontend_test:
+  tags: [shell]
+  stage: deploy
+  dependencies:
+    - composer
+    - npm
+  when: manual
+  artifacts:
+    expire_in: 60 minutes
+    paths:
+      - Tests/_data/VisualCeption/
+  script:
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
