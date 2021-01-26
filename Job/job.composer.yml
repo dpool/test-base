@@ -1,6 +1,6 @@
 composer:
   tags: [docker]
-  stage: build
+  stage: backend
   only:
     - test
     - production

@@ -1,6 +1,6 @@
 npm:
   tags: [docker]
-  stage: build
+  stage: frontend
   only:
     - test
     - production
