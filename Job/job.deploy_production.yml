@@ -1,12 +1,11 @@
 deploy_production:
   tags: [ docker ]
+  variables:
+#      REMOTE_PATH: $REMOTE_PATH_PROD
+    REMOTE_PATH: /home/www/p523082/html/production/
   stage: deploy
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.deploy.script.bash)
-  deploy_production:
-    variables:
-#      REMOTE_PATH: $REMOTE_PATH_PROD
-      REMOTE_PATH: /home/www/p523082/html/production/
   dependencies:
     - composer
     - npm
