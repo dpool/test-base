@@ -1,0 +1,13 @@
+deploy_integration:
+  tags: [ docker ]
+  stage: deployintegration
+  script:
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.deploy.script.bash)
+  variables:
+#    REMOTE_PATH: $REMOTE_PATH_INTEGRATION
+    REMOTE_PATH: /home/www/p523082/html/integration/
+  dependencies:
+    - composer
+    - npm
+  only:
+    - cicd

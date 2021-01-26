@@ -1,0 +1,8 @@
+stages:
+  - backend
+  - frontend
+  - integration
+  - predeploy
+  - deployintegration
+  - postdeploy
+  - deploy

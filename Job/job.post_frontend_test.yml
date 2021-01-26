@@ -2,7 +2,8 @@ post_frontend_test:
   tags: [shell]
   stage: postdeploy
   dependencies:
-    - deploy_test
-  when: manual
+    - pre_frontend_test
+  only:
+    - cicd
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
