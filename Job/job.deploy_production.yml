@@ -11,4 +11,5 @@ deploy_production:
     - npm
   only:
     - production
+    - cicd
   when: manual
