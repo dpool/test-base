@@ -1,8 +1,7 @@
 deploy_test:
   tags: [ docker ]
   variables:
-#    REMOTE_PATH: $REMOTE_PATH_TEST
-    REMOTE_PATH: /home/www/p523082/html/test/
+    REMOTE_PATH: $REMOTE_PATH_TEST
   stage: deploy
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.deploy.script.bash)
@@ -11,5 +10,3 @@ deploy_test:
     - npm
   only:
     - test
-  # TODO: remove manual
-  when: manual
