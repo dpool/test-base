@@ -14,5 +14,5 @@ services:
       /bin/sh -c "
       cd /acceptance;
       composer update;
-      php vendor/bin/codecept run -c ${ROOT_DIR}/Tests/codeception.yml --steps
+      php vendor/bin/codecept run --steps
       "
