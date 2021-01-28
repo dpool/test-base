@@ -9,5 +9,4 @@ ssh -p $SSH_PORT $SSH_LOGIN "
   php "$REMOTE_PATH"vendor/bin/typo3cms install:fixfolderstructure
   php "$REMOTE_PATH"vendor/bin/typo3cms extension:setupactive
   php "$REMOTE_PATH"vendor/bin/typo3cms database:updateschema 'destructive'
-  php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush
-"
+  php "$REMOTE_PATH"vendor/bin/typo3cms cache:flush"
