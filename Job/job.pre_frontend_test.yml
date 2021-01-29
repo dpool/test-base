@@ -3,5 +3,9 @@ pre_frontend_test:
   stage: predeploy
   only:
     - cicd
+  artifacts:
+    expire_in: 60 minutes
+    paths:
+      - Tests/_data/VisualCeption
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
