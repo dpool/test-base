@@ -4,6 +4,7 @@ pre_frontend_test:
   only:
     - cicd
   artifacts:
+    when: always
     expire_in: 60 minutes
     paths:
       - Tests/_data/VisualCeption
