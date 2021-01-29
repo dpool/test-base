@@ -5,5 +5,10 @@ post_frontend_test:
     - pre_frontend_test
   only:
     - cicd
+  artifacts:
+    expire_in: 60 minutes
+    paths:
+      - Tests/_data/VisualCeption
+      - Tests/_output/debug
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/run)
