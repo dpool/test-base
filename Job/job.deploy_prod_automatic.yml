@@ -1,4 +1,4 @@
-deploy_production_manual:
+deploy_prod_automatic:
   tags: [ docker ]
   variables:
       REMOTE_PATH: $REMOTE_PATH_PROD
@@ -8,8 +8,6 @@ deploy_production_manual:
   dependencies:
     - composer
     - npm
-  allow_failure: true
   only:
     - production
     - cicd
-  when: manual
