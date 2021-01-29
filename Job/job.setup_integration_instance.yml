@@ -5,3 +5,4 @@ setup_integration_instance:
     - cicd
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.setup_integration_instance.script.bash)
+  dependencies: []
