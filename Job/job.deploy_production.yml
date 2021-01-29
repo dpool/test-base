@@ -8,6 +8,7 @@ deploy_production:
   dependencies:
     - composer
     - npm
+  allow_failure: true
   only:
     - production
     - cicd
