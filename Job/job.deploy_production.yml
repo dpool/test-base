@@ -12,6 +12,4 @@ deploy_production:
   only:
     - production
     - cicd
-  when:
-    - manual
-    - on_failure
+  when: manual
