@@ -1,4 +1,4 @@
-deploy_production:
+deploy_production_manual:
   tags: [ docker ]
   variables:
       REMOTE_PATH: $REMOTE_PATH_PROD

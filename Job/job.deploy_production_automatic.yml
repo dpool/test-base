@@ -1,0 +1,13 @@
+deploy_production_automatic:
+  tags: [ docker ]
+  variables:
+      REMOTE_PATH: $REMOTE_PATH_PROD
+  stage: deploy
+  script:
+    - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.deploy.script.bash)
+  dependencies:
+    - composer
+    - npm
+  only:
+    - production
+    - cicd
