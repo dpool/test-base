@@ -1,0 +1,4 @@
+#!/bin/bash
+cp .Build/composer.json composer.json
+cp .Build/composer.lock composer.lock
+sh .Build/runTests.sh
