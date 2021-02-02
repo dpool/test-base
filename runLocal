@@ -1,4 +1,11 @@
 #!/bin/bash
+mv composer.json composer.json.bak
+mv composer.lock composer.lock.bak
+mv vendor vendor.bak
 cp .Build/composer.json composer.json
 cp .Build/composer.lock composer.lock
 sh .Build/runTests.sh
+mv composer.json.bak composer.json
+mv composer.lock.bak composer.lock
+rm -rf vendor
+mv vendor.bak vendor
