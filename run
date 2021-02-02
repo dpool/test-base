@@ -7,4 +7,5 @@ cd ../
 rm composer.json
 rm composer.lock
 wget https://raw.githubusercontent.com/dpool/test-base/main/composer.json
+wget https://raw.githubusercontent.com/dpool/test-base/main/composer.lock
 sh .Build/runTests.sh
