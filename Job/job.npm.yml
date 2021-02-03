@@ -4,7 +4,6 @@ npm:
   only:
     - test
     - production
-    - cicd
   dependencies:
     - composer
   script:

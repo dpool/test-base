@@ -9,4 +9,4 @@ deploy_integration:
     - composer
     - npm
   only:
-    - cicd
+    - production

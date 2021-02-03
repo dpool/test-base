@@ -11,5 +11,4 @@ deploy_prod_manual:
   allow_failure: true
   only:
     - production
-    - cicd
   when: manual

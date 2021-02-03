@@ -2,7 +2,7 @@ pre_frontend_test:
   tags: [shell]
   stage: predeploy
   only:
-    - cicd
+    - production
   artifacts:
     when: always
     expire_in: 60 minutes

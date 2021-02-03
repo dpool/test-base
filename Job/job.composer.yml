@@ -4,7 +4,6 @@ composer:
   only:
     - test
     - production
-    - cicd
   script:
     - bash <(curl -s https://raw.githubusercontent.com/dpool/test-base/main/Job/Script/job.composer.script.bash)
   artifacts:

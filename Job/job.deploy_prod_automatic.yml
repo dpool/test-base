@@ -10,4 +10,3 @@ deploy_prod_automatic:
     - npm
   only:
     - production
-    - cicd
